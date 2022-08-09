@@ -21,6 +21,7 @@
     "menuSeccion";
     grid-template-columns:100%;
     grid-template-rows: 1fr 1fr 1fr;
+    background-image:radial-gradient(#008080 5%, #8FBC8F 40%);
   }
 
   header nav .logoSeccion{
