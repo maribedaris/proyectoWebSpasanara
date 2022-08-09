@@ -413,6 +413,9 @@ header ul ul li{
 }
 
 .mainServicios .informacionServicioCont input{
+  /*animación*/
+  animation-name:cambiarColor;
+  animation-duration:3s;
   border-radius: 50px;
   border: solid #008080;
   background-color: #008080;
@@ -422,6 +425,41 @@ header ul ul li{
   font-size: 1.2rem;
   margin-top: 30px;
 }
+}
+
+@keyframes cambiarColor{
+  0%{
+  animation-name:cambiarColor;
+  animation-duration:3s;
+  border-radius: 50px;
+  border: solid #008080;
+  background-color: #008080;
+  color: white;
+  font-weight: bold;
+  width: 90%;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  }
+
+  50%{
+    background-color: white;
+    transform: scale(0.8);
+    color: #008080;
+    border: solid 1px #008080;
+  }
+
+  100%{
+  animation-name:cambiarColor;
+  animation-duration:3s;
+  border-radius: 50px;
+  border: solid #008080;
+  background-color: #008080;
+  color: white;
+  font-weight: bold;
+  width: 90%;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  }
 }
 
 
