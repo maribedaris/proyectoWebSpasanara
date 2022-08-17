@@ -645,6 +645,7 @@ margin-left: 5px;
   }
 
 /*Estilos del main de Página Inquietudes*/
+
 .mainInquietudes{
   display: flex;
   justify-content: center;
@@ -708,162 +709,153 @@ margin-left: 5px;
     font-weight: bold;
   }
 
-
-/*Estilos del main de Página Servicios*/
-.mainServicios{
-  display: flex;
-  margin-top: 30px;
-  height: 77vh;
-}
-
-.mainServicios .servicioSeccion{
-  border: 2px solid #008080;
-  width: 80%;
-  height: 30vh;
-  margin:15 auto;
-}
-
-.mainServicios .informacionServicio{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  height: 30vh;
-}
-
-.mainServicios .informacionServicio .informacionSeminariosImg{
-  display: inline-block;
-  width:20%;
-  height:20vh;
-  background-image: url("../assets/images/servicio_seminario.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-content: center;
-  margin: auto auto;
-}
-
-.mainServicios .informacionServicio .informacionActivacionImg{
-  width:20%;
-  height:20vh;
-  background-image: url("../assets/images/servicio_activacion.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-content: center;
-  margin: auto auto;
-}
-
-.mainServicios .informacionServicio .informacionAlineacionImg{
-  display: inline-block;
-  width:20%;
-  height:20vh;
-  background-image: url("../assets/images/servicio_alineacion.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-content: center;
-  margin: auto auto;
-}
-
-.mainServicios .informacionServicio .informacionAfectacionImg{
-  display: inline-block;
-  width:20%;
-  height:20vh;
-  background-image: url("../assets/images/servicio_afectacion.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-content: center;
-  margin: auto auto;
-}
-
-.mainServicios .informacionServicio .informacionCefaleaImg{
-  display: inline-block;
-  width:20%;
-  height:20vh;
-  background-image: url("../assets/images/servicio_cefalea.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-content: center;
-  margin: auto auto;
-}
-
-.mainServicios .informacionServicio .informacionServicioCont{
-  border: 1px solid #008080;
-  width: 70%;
-  height: 18vh;
-  margin: auto auto;
-  text-align: center;
-}
-
-.mainServicios .informacionServicio .informacionServicioCont h2{
+/*Estilos del main de la página servicios*/
+.mainServicios h5{
   font-size: 1.8rem;
   color: #008080;
+}
+.mainServicios p{
+  font-size: 1.6rem;
+  font-family:  "DM Sans", sans-serif;
+}
+
+#imageRow1{
+  background-image: url("../assets/images/inmune_Servicios.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  color: #dfe1e5;
+  text-align: center;
+  display: flex;
+align-content: center;
+}
+
+#imageRow2{
+  background-image: url("../assets/images/bronquial_Servicios.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  color: #dfe1e5;
+  text-align: center;
+  display: flex;
+align-content: center;
+}
+
+#imageRow3{
+  background-image: url("../assets/images/alineacion_servicio\ .jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  color: #dfe1e5;
+  text-align: center;
+  display: flex;
+align-content: center;
+}
+
+#imageRow4{
+  background-image: url("../assets/images/cefaleas_servicio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  color: #dfe1e5;
+  text-align: center;
+  display: flex;
+align-content: center;
+}
+
+#imageRow5{
+  background-image: url("../assets/images/seminarios_servicio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  color: #dfe1e5;
+  text-align: center;
+  display: flex;
+align-content: center;
+}
+
+#imageRow1 .display-1,
+#imageRow2 .display-1,
+#imageRow3 .display-1,
+#imageRow4 .display-1,
+#imageRow5 .display-1{
+  font-weight: bold;
+  font-family:  "DM Sans", sans-serif;
+  -webkit-text-stroke: 2px #008080;
+}
+
+.activText{
+  text-align: left;
+}
+
+/*Estilos de las tarjeta*/
+.mainServicios #tarjetas, 
+.mainServicios #tarjetas2,
+.mainServicios #tarjetas3,
+.mainServicios #tarjetas4,
+.mainServicios #tarjetas5
+{
+  height: 95%;
+}
+
+.mainServicios #tarjetas .col{
+  height: 60%;
+}
+
+.mainServicios #tarjetas3 .col,
+.mainServicios #tarjetas4 .col,
+.mainServicios #tarjetas5 .col,
+.mainServicios #tarjetas2 .col
+{
+  height: 100%;
+}
+
+.mainServicios #tarjetas .card-img-top,
+.mainServicios #tarjetas2 .card-img-top,
+.mainServicios #tarjetas3 .card-img-top,
+.mainServicios #tarjetas4 .card-img-top,
+.mainServicios #tarjetas5 .card-img-top{
+  height: 80%;
+}
+
+#destacados .col,
+#destacados2 .col,
+#destacados3 .col,
+#destacados4 .col,
+#destacados5 .col{
+  margin: 0 auto;
+}
+
+/*Estilos servicios destacados*/
+#tarjetaServiciosTitulo .display-4,
+#tarjetaServiciosTitulo2 .display-4,
+#tarjetaServiciosTitulo3 .display-4,
+#tarjetaServiciosTitulo4 .display-4,
+#tarjetaServiciosTitulo5 .display-4{
+margin-top: 20px;
+margin-bottom: 20px;
+background-color: #8FBC8F;
+color: #008080;
+font-weight: bold;
+border: #008080 1px;
+}
+
+
+.btn,.btn-primary{
+  background-color: #008080;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
-.mainServicios .informacionServicio .informacionServicioCont p{
-  font-size: 1.6rem;
-  height: 8vh;
+.btn:hover,.btn-primary:hover{
+  background-color:#8FBC8F;
+  color: #008080;
 }
-
-.mainServicios .informacionServicioCont .divBoton{
-  margin: auto auto;
-}
-
-.mainServicios .informacionServicioCont input{
-  /*animación*/
-  animation-name:cambiarColor;
-  animation-duration:3s;
-  width: 30%;
-    border-radius: 50px;
-    border: solid #008080;
-    background-color: #008080;
-    color: white;
-    font-weight: bold;
-    animation-iteration-count: 2;
-}
-
-@keyframes cambiarColor{
-  0%{
-    width: 30%;
-    border-radius: 50px;
-    border: solid #008080;
-    background-color: #008080;
-    color: white;
-    font-weight: bold;
-  }
-
-  50%{
-    background-color: white;
-    transform: scale(1.2);
-    color: #008080;
-    border: solid 1px #008080;
-    font-weight: bold;
-  }
-
-  100%{
-    width: 30%;
-    border-radius: 50px;
-    border: solid #008080;
-    background-color: #008080;
-    color: white;
-    font-weight: bold;
-  }
-}
-
-/*Estilos del footer de Página Servicios*/
-.footerServicios{
-  position: absolute;
-  bottom: 0px;
-}
-
 
 /*Estilos del footer de Página Registro*/
 .footerRegistro{
@@ -892,5 +884,18 @@ footer{
 footer p{
   font-size: 1.4rem;
 }
- 
 
+/*Estilos del main del footer servicios*/
+.footerServicios{
+  margin-top: 20px;
+  background-image: linear-gradient(to right,#008080 5%, #8FBC8F 40%);
+  height: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.footerServicios p{
+  font-size: 1.4rem;
+}

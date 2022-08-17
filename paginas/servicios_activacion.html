@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spasanara_Servicios</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
@@ -12,67 +15,177 @@
     <link rel="stylesheet" href="../estilos/mobile.css"/>
 </head>
 <body>
-    <header>
-        <nav>
-            <section class="informacionArriba">
-                <div>
-                    <ul class="listaRegistro">
-                        <li class="itemsRegistro">RESERVAR</li>
-                        <li class="itemsRegistro"><a href="./registro.html">REGISTRARSE</a></li> 
-                    </ul>
-                </div>
-                <div class="redesSeccion">
-                    <span class="instagramLogo"></span>
-                    <span class="facebookLogo"></span>
-                    <span class="whatsappLogo"></span>
-                </div>
-            </section>
-            <section class="logoSeccion">
-                <div  class="spasanaraLogo" >
-                    <span class="logo"></span>
-                </div>
-                <div class="buscadorSeccion">
-                    <span class="iconoBuscar">
-                    </span>
-                    <input type="text">
-                </div>
-            </section>
-            <section>
-                <ul class="listaMenu">
-                    <li><a href="../index.html">INICIO</a></li> 
-                    <li><a href="./nosotros.html">NOSOTROS</a></li> 
-                    <li><a>SERVICIOS</a>
-                        <ul>
-                            <li><a href="./servicios_activacion.html">ACTIVACIÓN DEL SISTEMA INMUNOLOGICO</a></li>
-                            <li><a href="./servicios_alineacion.html">ALINEACIÓN DE COLUMNA VERTEBRAL</a></li>
-                            <li><a href="./servicios_cefaleas.html">CEFALEAS TRADICIONALES</a></li>
-                            <li><a href="./servicios_afectacion.html">AFECTACIÓN BRONQUIAL</a></li>
-                            <li><a href="./servicios_seminarios.html">SEMINARIO DE PAREJAS</a></li>
-                        </ul>
-                    </li> 
-                    <li><a href="./inquietudes.html">¿INQUIETUDES?</a></li> 
-                </ul>
-            </section>
-        </nav>
-    </header>
-    <div class="mainServicios">
-        <section class="servicioSeccion">
-            <div class="informacionServicio">
-                <div class="informacionActivacionImg"></div>
-                <div class="informacionServicioCont">
-                    <h2>Nombre del Servicio</h2>
-                    <p>Información del servicio</p>
-                    <div class="divBoton">
-                        <input type="submit" value="Consultar disponibilidad"/>
-                        <span class="whatsappLogo">
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <header>
+      <nav>
+          <section class="informacionArriba">
+              <div>
+                  <ul class="listaRegistro">
+                      <li class="itemsRegistro">RESERVAR</li>
+                      <li class="itemsRegistro"><a href="./registro.html">REGISTRARSE</a></li> 
+                  </ul>
+              </div>
+              <div class="redesSeccion">
+                  <span class="instagramLogo"></span>
+                  <span class="facebookLogo"></span>
+                  <span class="whatsappLogo"></span>
+              </div>
+          </section>
+          <section class="logoSeccion">
+              <div  class="spasanaraLogo" >
+                  <span class="logo"></span>
+              </div>
+              <div class="buscadorSeccion">
+                  <span class="iconoBuscar">
+                  </span>
+                  <input type="text">
+              </div>
+          </section>
+          <section>
+              <ul class="listaMenu">
+                  <li><a href="../index.html">INICIO</a></li> 
+                  <li><a href="./nosotros.html">NOSOTROS</a></li> 
+                  <li><a>SERVICIOS</a>
+                      <ul>
+                          <li><a href="./servicios_activacion.html">ACTIVACIÓN DEL SISTEMA INMUNOLOGICO</a></li>
+                          <li><a href="./servicios_alineacion.html">ALINEACIÓN DE COLUMNA VERTEBRAL</a></li>
+                          <li><a href="./servicios_cefaleas.html">CEFALEAS TRADICIONALES</a></li>
+                          <li><a href="./servicios_afectacion.html">AFECTACIÓN BRONQUIAL</a></li>
+                          <li><a href="./servicios_seminarios.html">SEMINARIO DE PAREJAS</a></li>
+                      </ul>
+                  </li> 
+                  <li><a href="./inquietudes.html">¿INQUIETUDES?</a></li> 
+              </ul>
+          </section>
+      </nav>
+  </header>
+  <div class="mainServicios">
+    <div class="row" id="imageRow1">
+        <h1 class="display-1">Activación del sistema inmunológico</h1>
     </div>
-    <footer class="footerServicios">
+    <div class="container text-center">
+        <div class="row">
+          <div class="activText">
+              <h2 class="display-4">¿Cómo funciona el sistema inmune en las infecciones?</h2>
+              <p class="lead">
+                  Si un microorganismo atraviesa las barreras físicas (piel), químicas (pH gástrico, enzimas, etc) o biológicas (microorganismos saprofitos de intestino, etc) de defensa no inmune y no específica de un animal, se podrán en marcha una serie de mecanismos inmunológicos (humorales y celulares) que de forma consecutiva y coordinada responderán a la infección. La primera respuesta, está mediada por los diferentes mecanismos de la respuesta natural que se inician de forma inmediata tras la entrada de un agente extraño (4 minutos a 4 horas).
+              </p>
+              <h2 class="display-4">Servicio de estimulación celular</h2>
+              <p class="lead">
+                  Nuestro servicio de estimulación celular le ayudará a su sistema inmune a desarrollar las defensas necesarias para combatir cualquier tipo de virus
+              </p>
+          </div>
+        </div>
+        <div class="row">
+          <!--Tarjetas con precios-->
+          <div class="row row-cols-1 row-cols-md-3 g-4" id="tarjetas">
+            <div class="col">
+              <div class="card h-100">
+                <img src="../assets/images/servicio_activacion.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tratamiento con luz y sonido por 40 minutos</h5>
+                  <p class="card-text">Realiza un tratamiento efectivo y novedoso con una duración de 40 minutos que te hará sentir mucho más relajado y te ayudará a activar tu sistema de defensas</p>
+                  <!--Botón-->
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="button">Reservar</button>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../assets/images/servicio_activacion2.jpg" class="card-img-top" alt="..">
+                <div class="card-body">
+                  <h5 class="card-title">Tratamiento con luz y sonido más hidromasaje</h5>
+                  <p class="card-text">Realiza un tratamiento efectivo y novedoso con una duración de 40 minutos que te hará sentir mucho más relajado y te ayudará a activar tu sistema de defensas y media hora de hidromasaje relajante</p>
+                  <!--Botón-->
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="button">Reservar</button>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../assets/images/servicio_activacion3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tratamiento con luz y sonido más hidromasaje y limpieza con piedras de jade</h5>
+                  <p class="card-text">Realiza un tratamiento efectivo y novedoso con una duración de 40 minutos que te ayudará a activar tu sistema de defensas,media hora de hidromasaje relajante y una limpieza corporal con piedras de jade</p>
+                  <!--Botón-->
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="button">Reservar</button>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Tarjetas de servicios destacados-->
+        <div class="row" id="tarjetaServiciosTitulo">
+          <h2 class="display-4">Nuestros servicios destacados</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-4 g-4" id="destacados">
+          <div class="col">
+            <div class="card">
+              <img src="../assets/images/servicio_seminario.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Seminarios para parejas</h5>
+                <p class="card-text">Una experiencia romantica y enriquecedora para tí y tu pareja.</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary" type="button">Ver Servicio</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../assets/images/servicio_afectacion.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Afectación bronquial</h5>
+                <p class="card-text">Un protocolo que ayuda a reducir las afectaciones de los bronquios</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary" type="button">Ver Servicio</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../assets/images/servicio_alineacion.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Alineación de la columna</h5>
+                <p class="card-text">Máquinas que ayudan a alinear la columna vertebral</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary" type="button">Ver Servicio</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../assets/images/servicio_cefalea.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cefaleas tradicionales</h5>
+                <p class="card-text">Ayuda a reducir la intensidad de las cefaleas tradicionales</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary" type="button">Ver Servicio</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        <div class="footerServicios">
         <p>By: Mariana Bedoya Arismendy</p>
-    </footer>
+        </div>
 </body>
 </html>

@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spasanara_Servicios</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../estilos/mobile.css"/>
+    <!--fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
@@ -55,24 +64,134 @@
             </section>
         </nav>
     </header>
-    <main class="mainServicios">
-        <section class="servicioSeccion">
-            <div class="informacionServicio">
-                <div class="informacionCefaleaImg"></div>
-                <div class="informacionServicioCont">
-                    <h2>Nombre del Servicio</h2>
-                    <p>Información del servicio</p>
-                    <div class="divBoton">
-                        <input type="submit" value="Consultar disponibilidad"/>
-                        <span class="whatsappLogo">
-                        </span>
+    <div class="mainServicios">
+        <div class="row" id="imageRow4">
+            <h1 class="display-1">Cefaleas tradicionales</h1>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="activText">
+                    <h2 class="display-4">¿Qué son las cefaleas?</h2>
+                    <p class="lead">
+                        Las cefaleas (caracterizadas por dolores de cabeza recurrentes) son uno de los trastornos más comunes del sistema nervioso. Son trastornos primarios dolorosos e incapacitantes como la jaqueca o migraña, la cefalea tensional y la cefalea en brotes.
+                    </p>
+                    <h2 class="display-4">Servicio de masaje con piedras de jade</h2>
+                    <p class="lead">
+                        Nuestro servicio de masajes con piedras de jade ayudará a su sistema a combatir las cefaleas tradicionales.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <!--Tarjetas con precios-->
+                <div class="row row-cols-1 row-cols-md-3 g-4" id="tarjetas4">
+                    <div class="col">
+                    <div class="card h-100">
+                        <img src="../assets/images/cefalea_servicio5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Revisión médica</h5>
+                        <p class="card-text">Valoración por un profesional en el área</p>
+                        <!--Botón-->
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-primary" type="button">Reservar</button>
+                        </div>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted"></small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card h-100">
+                        <img src="../assets/images/cefalea_servicio4.jpg" class="card-img-top" alt="..">
+                        <div class="card-body">
+                        <h5 class="card-title">Revisión médica más masaje con piedras de jade</h5>
+                        <p class="card-text">Valoración por un profesional en el área más masaje con piedras de jade que ayudan a reducir las cefaleas</p>
+                        <!--Botón-->
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-primary" type="button">Reservar</button>
+                        </div>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted"></small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card h-100">
+                        <img src="../assets/images/cefalea_servicio3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Revisión médica más masaje con piedras de jade más hodromasaje</h5>
+                        <p class="card-text">Valoración por un profesional en el área más masaje con piedras de jade que ayudan a reducir las cefaleas más hidromasaje</p>
+                        <!--Botón-->
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-primary" type="button">Reservar</button>
+                        </div>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted"></small>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!--Tarjetas de servicios destacados-->
+                <div class="row" id="tarjetaServiciosTitulo4">
+                <h2 class="display-4">Nuestros servicios destacados</h2>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-4 g-4" id="destacados4">
+                <div class="col">
+                    <div class="card">
+                    <img src="../assets/images/servicio_seminario.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Seminarios para parejas</h5>
+                        <p class="card-text">Una experiencia romantica y enriquecedora para tí y tu pareja.</p>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary" type="button">Ver Servicio</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="../assets/images/servicio_activacion2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Activación de defensas</h5>
+                        <p class="card-text">Un protocolo que ayuda a incrementar las defensas en el organismo</p>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary" type="button">Ver Servicio</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="../assets/images/servicio_alineacion.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Alineación de la columna</h5>
+                        <p class="card-text">Máquinas que ayudan a alinear la columna vertebral</p>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary" type="button">Ver Servicio</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="../assets/images/servicio_afectacion.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Afectación bronquial</h5>
+                        <p class="card-text">Un protocolo que ayuda a reducir las afectaciones de los bronquios</p>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary" type="button">Ver Servicio</button>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="footerServicios">
+            </div>
+    </div>
+    <div class="footerServicios">
         <p>By: Mariana Bedoya Arismendy</p>
-    </footer>
+    </div>
 </body>
 </html>
