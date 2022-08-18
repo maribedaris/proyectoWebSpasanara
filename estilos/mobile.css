@@ -1,5 +1,5 @@
 
-@media (max-width: 600px) {
+@media (max-width: 630px) {
 /*Estilos generales*/
   * {
     box-sizing: border-box;
@@ -13,7 +13,6 @@
 
 /*Estilos del header mobile*/
   header nav{
-    height: 20vh;
     display: grid;
     grid-template-areas:
     "informacionArriba"
@@ -22,6 +21,10 @@
     grid-template-columns:100%;
     grid-template-rows: 1fr 1fr 1fr;
     background-image:radial-gradient(#008080 5%, #8FBC8F 40%);
+  }
+
+  ol,ul{
+    padding-left: 0rem;
   }
 
   header nav .logoSeccion{
@@ -52,10 +55,11 @@
     grid-area: menuSeccion;
     display: flex;
     justify-content: center;
+    margin: auto  auto;
   }
 
   header .listaMenu{
-    margin:auto auto;
+   margin: auto auto;
   }
 
   header .listaMenu a{

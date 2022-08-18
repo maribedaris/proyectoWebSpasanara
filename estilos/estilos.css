@@ -83,7 +83,7 @@ header .listaMenu{
   display: inline-flex;
   justify-content: center;
   list-style: none;
-  margin-left: 80px;
+  margin-left: 50px;
   margin-bottom: 20px;
   color: #008080;
 }
@@ -724,11 +724,12 @@ margin-left: 5px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 20vh;
+  height: 30vh;
   color: #dfe1e5;
   text-align: center;
   display: flex;
-align-content: center;
+  align-content: center;
+  margin-right: 0.03vw;
 }
 
 #imageRow2{
@@ -736,11 +737,12 @@ align-content: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 20vh;
+  height: 30vh;
   color: #dfe1e5;
   text-align: center;
   display: flex;
-align-content: center;
+  align-content: center;
+  margin-right: 0.03vw;
 }
 
 #imageRow3{
@@ -748,11 +750,12 @@ align-content: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 20vh;
+  height: 30vh;
   color: #dfe1e5;
   text-align: center;
   display: flex;
-align-content: center;
+  align-content: center;
+  margin-right: 0.03vw;
 }
 
 #imageRow4{
@@ -760,11 +763,12 @@ align-content: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 20vh;
+  height: 30vh;
   color: #dfe1e5;
   text-align: center;
   display: flex;
-align-content: center;
+  align-content: center;
+  margin-right: 0.03vw;
 }
 
 #imageRow5{
@@ -772,11 +776,12 @@ align-content: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 20vh;
+  height: 30vh;
   color: #dfe1e5;
   text-align: center;
   display: flex;
-align-content: center;
+  align-content: center;
+  margin-right: 0.03vw;
 }
 
 #imageRow1 .display-1,
@@ -803,24 +808,14 @@ align-content: center;
   height: 95%;
 }
 
-.mainServicios #tarjetas .col{
-  height: 60%;
-}
 
+.mainServicios #tarjetas .col,
 .mainServicios #tarjetas3 .col,
 .mainServicios #tarjetas4 .col,
 .mainServicios #tarjetas5 .col,
 .mainServicios #tarjetas2 .col
 {
   height: 100%;
-}
-
-.mainServicios #tarjetas .card-img-top,
-.mainServicios #tarjetas2 .card-img-top,
-.mainServicios #tarjetas3 .card-img-top,
-.mainServicios #tarjetas4 .card-img-top,
-.mainServicios #tarjetas5 .card-img-top{
-  height: 80%;
 }
 
 #destacados .col,
@@ -844,7 +839,6 @@ color: #008080;
 font-weight: bold;
 border: #008080 1px;
 }
-
 
 .btn,.btn-primary{
   background-color: #008080;
