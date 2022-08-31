@@ -1,0 +1,822 @@
+
+/*Estilos generales*/;
+@mixin tamanio($ancho,$alto){
+  width: $ancho;
+  height: $alto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+  }
+  
+  header {
+    background-image: linear-gradient(to left, #008080 5%, #8FBC8F 40%);
+    position: relative;
+  
+    .informacionArriba {
+      display: inline-flex;
+      margin-top: 15px;
+    }
+  
+    .listaRegistro {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-left: 10px;
+    }
+  
+    .itemsRegistro {
+      margin-right: 25px;
+      text-decoration: none;
+      color: #008080;
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+  
+    a:link {
+      text-decoration: none;
+      color: #008080;
+    }
+  }
+  
+  a {
+    &:visited, &:active {
+      text-decoration: none;
+      color: #008080;
+    }
+  }
+  
+  header {
+    ul {
+      list-style: none;
+      font-size: 0;
+    }
+  
+    li {
+      display: inline-block;
+      position: relative;
+      font-size: 14px;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    ul {
+      ul {
+        position: absolute;
+        display: none;
+  
+        li {
+          display: block;
+          background-color: #8FBC8F;
+          width: 250%;
+  
+          &:hover {
+            background-color: white;
+          }
+        }
+      }
+  
+      li:hover ul {
+        display: block;
+      }
+    }
+  
+    .menuSeccion {
+      margin: auto auto;
+    }
+  
+    .listaMenu {
+      display: inline-flex;
+      justify-content: center;
+      list-style: none;
+      margin-left: 50px;
+      margin-bottom: 20px;
+      color: #008080;
+  
+      li {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+    }
+
+    $redes:(
+      instagram: "../assets/instagram_logo.svg.svg",
+      facebook: "../assets/facebook_logo.svg",
+      whatsapp:"../assets/whatsApp_logo.svg"
+    );
+  
+    .redesSeccion {
+      position: absolute;
+      right: 15px;
+    }
+
+    @each $nombres,$linkcito in $redes{
+      .#{$nombres}Logo{
+        display: inline-block;
+      @include tamanio(35px,35px);
+      margin-left: 10px;
+      background-image: url($linkcito);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      }
+    }
+
+    .logoSeccion {
+      display: flex;
+      align-items: center;
+  
+      .spasanaraLogo {
+        @include tamanio(50px,50px);
+        background-image: url("../assets/logo.svg.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  
+    .buscadorSeccion {
+      width: 250px;
+      border-radius: 10px;
+      border: 1px solid #dfe1e5;
+      display: flex;
+      justify-content: center;
+      background-color: #dfe1e5;
+    }
+  
+    .iconoBuscar {
+      background-image: url("https://img.icons8.com/android/24/000000/search.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      @include tamanio(18px,18px);
+    }
+  
+    .buscadorSeccion input {
+      @include tamanio(200px,15px);
+      border: none;
+      outline: none;
+      background-color: #dfe1e5;
+    }
+  }
+  
+  /*Estilos del main del Index*/
+  
+  /*Estilos de la sección de servicios destacados*/
+  
+  main {
+    display: grid;
+    grid-template-areas: "destacadosSection galeriaImg galeriaImg galeriaImg" "destacadosSection quienesSomos quienesSomos quienesSomos" "destacadosSection formulario formulario formulario" "destacadosSection mapa mapa mapa";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  
+    .destacadosSection {
+      grid-area: destacadosSection;
+      align-items: center;
+      justify-items: center;
+      display: grid;
+      grid-template-areas: "servicioDestacado1" "servicioDestacado2" "servicioDestacado3";
+      grid-template-columns: 3fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  
+      .servicioDestacado, .servicioDestacado3 {
+        border: 1px solid #008080;
+        height: 350px;
+        margin: 10px;
+        display: grid;
+        grid-template-areas: "titulo" "texto" "boton";
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 75% 15%;
+      }
+  
+      .destacadoTitle {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #008080;
+        background-color: #8FBC8F;
+        border: 1px solid #008080;
+        text-align: center;
+      }
+  
+      .destacadoParrafo {
+        font-size: 1.4rem;
+      }
+  
+      .botonReserva {
+        @include tamanio(100px,30px);
+        border-radius: 50px;
+        border: solid #008080;
+        background-image: linear-gradient(to left, #008080 0%, #8FBC8F 90%);
+        color: white;
+        font-weight: bold;
+        margin: 0 auto;
+  
+        &:hover {
+          @include tamanio(120px,35px);
+        }
+      }
+    }
+  
+    .galeriaImagenes {
+      grid-area: galeriaImg;
+      display: grid;
+      grid-area: "img1 img2 img3";
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: 100%;
+      grid-row-gap: 10px;
+      justify-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      img {
+        @include tamanio(250px,250px);
+      }
+    }
+  
+    .quienesSomos {
+      grid-area: quienesSomos;
+      display: grid;
+      grid-template-areas: "texto img4";
+      grid-template-columns: 60% 40%;
+      grid-template-rows: 2fr;
+    }
+  
+    .quienesSomosTexto {
+      grid-area: texto;
+    }
+  
+    .quienesSomosImg {
+      grid-area: img4;
+  
+      img {
+        @include tamanio(250px,250px);
+      }
+    }
+  
+    .quienesSomos {
+      .quienesTitulo {
+        font-size: 1.6rem;
+        color: #008080;
+        font-weight: bold;
+      }
+  
+      .quienesParrafo {
+        font-size: 1.4rem;
+        color: #008080;
+      }
+    }
+  
+    .formulario {
+      grid-area: formulario;
+      display: grid;
+      grid-template-areas: "formulario img5" "boton img5";
+      grid-template-columns: 60% 40%;
+      grid-template-rows: 75% 25%;
+    }
+  
+    .formularioTexto {
+      grid-area: formulario;
+    }
+  
+    .formularioImg {
+      grid-area: img5;
+      display: flex;
+      justify-content: center;
+  
+      Img {
+        @include tamanio(250px,250px);
+        border-radius: 40%;
+      }
+    }
+  
+    .formularioBoton {
+      grid-area: boton;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .formulario {
+      legend {
+        color: #008080;
+        font-weight: bold;
+        font-size: 1.6rem;
+      }
+  
+      .botonDescuento {
+        height: 30px;
+        border-radius: 50px;
+        border: solid #008080;
+        background-color: #008080;
+        color: white;
+        font-weight: bold;
+        animation: wobble-hor-bottom 10s both;
+      }
+  
+      .formularioDatos {
+        margin-top: 2vh;
+      }
+  
+      input {
+        margin-top: 5px;
+        width: 300px;
+      }
+    }
+  
+    .ubicacionSection {
+      grid-area: mapa;
+  
+      h2 {
+        color: #008080;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 5px;
+        background-color: #8FBC8F;
+        border: 1px solid #008080;
+      }
+  
+      p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+  
+      .iframeSection {
+        display: flex;
+        justify-content: center;
+      }
+  
+      iframe {
+        @include tamanio(40%,40vh);
+      }
+    }
+  }
+  
+  /*Estilos de la sección galería de imagenes*/
+  
+  /* ----------------------------------------------
+   * Generated by Animista on 2022-8-8 23:41:22*/
+  @-webkit-keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+    }
+  
+    15% {
+      -webkit-transform: translateX(-30px) rotate(-6deg);
+      transform: translateX(-30px) rotate(-6deg);
+    }
+  
+    30% {
+      -webkit-transform: translateX(15px) rotate(6deg);
+      transform: translateX(15px) rotate(6deg);
+    }
+  
+    45% {
+      -webkit-transform: translateX(-15px) rotate(-3.6deg);
+      transform: translateX(-15px) rotate(-3.6deg);
+    }
+  
+    60% {
+      -webkit-transform: translateX(9px) rotate(2.4deg);
+      transform: translateX(9px) rotate(2.4deg);
+    }
+  
+    75% {
+      -webkit-transform: translateX(-6px) rotate(-1.2deg);
+      transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+  
+  @keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+    }
+  
+    15% {
+      -webkit-transform: translateX(-30px) rotate(-6deg);
+      transform: translateX(-30px) rotate(-6deg);
+    }
+  
+    30% {
+      -webkit-transform: translateX(15px) rotate(6deg);
+      transform: translateX(15px) rotate(6deg);
+    }
+  
+    45% {
+      -webkit-transform: translateX(-15px) rotate(-3.6deg);
+      transform: translateX(-15px) rotate(-3.6deg);
+    }
+  
+    60% {
+      -webkit-transform: translateX(9px) rotate(2.4deg);
+      transform: translateX(9px) rotate(2.4deg);
+    }
+  
+    75% {
+      -webkit-transform: translateX(-6px) rotate(-1.2deg);
+      transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+  
+  /*Estilos del main de Página Nosotros*/
+  
+  .mainNosotros {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+    h1 {
+      color: #008080;
+      font-size: 2rem;
+      margin-top: 10px;
+      margin-left: 15px;
+      margin-bottom: 5px;
+    }
+  
+    .instalNosotros {
+      display: inline-flex;
+      flex-direction: row;
+      align-content: center;
+      @include tamanio(98%,50vh);
+      border: 1px solid #008080;
+      justify-content: space-between;
+      margin-left: 1.3%;
+      background-color: #dfe1e5;
+      margin-bottom: 10px;
+
+    
+    }
+  }
+  
+  .naceNosotros, .ubicacionNosotros {
+    display: inline-flex;
+    flex-direction: row;
+    align-content: center;
+    @include tamanio(98%,50vh);
+    border: 1px solid #008080;
+    justify-content: space-between;
+    margin-left: 1.3%;
+    background-color: #dfe1e5;
+    margin-bottom: 10px;
+  }
+  
+  .mainNosotros {
+    .instalNosotros {
+      .instalNosotrosImg {
+        background-image: url("../assets/images/instalaciones.jpg");
+        margin-left: 10px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid #008080;
+      }
+    }
+  
+    .naceNosotros .naceNosotrosImg {
+      @extend .instalNosotrosImg;
+      background-image: url("../assets/images/nosotros_vela.jpg");
+    }
+  
+    .ubicacionNosotrosmap iframe {
+      @include tamanio(25vw,40vh);
+      margin-left: 10px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid #008080;
+    }
+  
+    .instalNosotrosTexto h2, .naceNosotrosTexto h2, .ubicacionNosotros h2 {
+      color: #008080;
+      font-size: 1.8rem;
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+  
+    .instalNosotrosTexto p {
+      font-size: 1.6rem;
+      margin-left: 5px;
+    }
+  }
+  
+  .naceNosotrosTexto p, .ubicacionNosotrosTexto p {
+    font-size: 1.6rem;
+    margin-left: 5px;
+  }
+  
+  .mainNosotros .equipoNosotros {
+    background-color: #dfe1e5;
+    @include tamanio(98%,70vh);
+    border: 1px solid #008080;
+    margin-left: 1.3%;
+    margin-bottom: 10px;
+  
+    h2 {
+      color: #008080;
+      font-size: 1.8rem;
+      margin-top: 5px;
+      margin-left: 5px;
+      margin-bottom: 5px;
+    }
+  
+    .contenedorEquipo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    .personaEquipo {
+      @include tamanio(30%,60vh);
+      flex-direction: column;
+      background-color: #8FBC8F;
+      border: 1px solid #008080;
+  
+      img {
+        @include tamanio(70%,45vh);
+        border-radius: 5px;
+        display: flex;
+        margin: 0 auto;
+        border: 1px solid #008080;
+      }
+    }
+  
+    .personaEquipoTexto {
+      text-align: center;
+  
+      h3 {
+        font-size: 1.8rem;
+        color: #008080;
+      }
+  
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  
+  /*Estilos del main de Página Registro*/
+  
+  .mainRegistro {
+    display: flex;
+    justify-content: center;
+    height: 77vh;
+  
+    .fielsetRegistro {
+      @include tamanio(70%,50vh);
+      margin-top: 50px;
+      border: 5px double #008080;
+  
+      legend {
+        color: #008080;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        width: 13%;
+      }
+  
+      .divisionRegistro {
+        margin-top: 30px;
+        margin-left: 50px;
+  
+        label {
+          color: #008080;
+          font-size: 1.6rem;
+          font-weight: bold;
+        }
+  
+        input {
+          width: 50%;
+        }
+      }
+  
+      .contenedorRegistro {
+        margin-top: 5px;
+        margin-left: 5px;
+      }
+  
+      .divBoton {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+  
+        input {
+          @include tamanio(100px,30px);
+          border-radius: 50px;
+          border: solid #008080;
+          background-color: #008080;
+          color: white;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  
+  /*Estilos del main de Página Inquietudes*/
+  
+  .mainInquietudes {
+    display: flex;
+    justify-content: center;
+    height: 77vh;
+  
+    h1 {
+      color: #008080;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .fielsetComentarios {
+      @include tamanio(90%,50vh);
+      margin-top: 50px;
+      border: 5px double #008080;
+  
+      legend {
+        color: #008080;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        width: 80%;
+      }
+  
+      .divisionComentarios {
+        display: flex;
+        flex-direction: column;
+  
+        label {
+          color: #008080;
+          font-size: 1.6rem;
+          font-weight: bold;
+          text-align: center;
+          margin-top: 20px;
+        }
+  
+        textarea {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+  
+      .divBoton {
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+      }
+  
+      input {
+        @include tamanio(100px,30px);
+        border-radius: 50px;
+        border: solid #008080;
+        background-color: #008080;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+  
+  /*Estilos del main de la página servicios*/
+  
+  .mainServicios {
+    h5 {
+      font-size: 1.8rem;
+      color: #008080;
+    }
+  
+    p {
+      font-size: 1.6rem;
+      font-family: "DM Sans", sans-serif;
+    }
+  }
+  
+  #imageRow1 {
+    background-image: url("../assets/images/inmune_Servicios.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    color: #dfe1e5;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    margin-right: 0.03vw;
+  }
+  
+  #imageRow2 {
+    background-image: url("../assets/images/bronquial_Servicios.jpg");
+   @extend #imageRow1;
+  }
+  
+  #imageRow3 {
+    background-image: url("../assets/images/alineacion_servicio\ .jpg");
+   @extend #imageRow1;
+  }
+  
+  #imageRow4 {
+    background-image: url("../assets/images/cefaleas_servicio.jpg");
+    @extend #imageRow1;
+  }
+  
+  #imageRow5 {
+    background-image: url("../assets/images/seminarios_servicio.jpg");
+    @extend #imageRow1;
+  }
+  
+  #imageRow1 .display-1, #imageRow2 .display-1, #imageRow3 .display-1, #imageRow4 .display-1, #imageRow5 .display-1 {
+    font-weight: bold;
+    font-family: "DM Sans", sans-serif;
+    -webkit-text-stroke: 2px #008080;
+  }
+  
+  .activText {
+    text-align: left;
+  }
+  
+  /*Estilos de las tarjeta*/
+  
+  .mainServicios {
+    #tarjetas, #tarjetas2, #tarjetas3, #tarjetas4, #tarjetas5 {
+      height: 95%;
+    }
+  
+    #tarjetas .col, #tarjetas3 .col, #tarjetas4 .col, #tarjetas5 .col, #tarjetas2 .col {
+      height: 100%;
+    }
+  }
+  
+  #destacados .col, #destacados2 .col, #destacados3 .col, #destacados4 .col, #destacados5 .col {
+    margin: 0 auto;
+  }
+  
+  /*Estilos servicios destacados*/
+  
+  #tarjetaServiciosTitulo .display-4, #tarjetaServiciosTitulo2 .display-4, #tarjetaServiciosTitulo3 .display-4, #tarjetaServiciosTitulo4 .display-4, #tarjetaServiciosTitulo5 .display-4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #8FBC8F;
+    color: #008080;
+    font-weight: bold;
+    border: #008080 1px;
+  }
+  
+  .btn, .btn-primary {
+    background-color: #008080;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .btn:hover, .btn-primary:hover {
+    background-color: #8FBC8F;
+    color: #008080;
+  }
+  
+  /*Estilos del footer de Página Registro*/
+  
+  .footerRegistro, .footerInquietudes {
+    position: absolute;
+    bottom: 0px;
+  }
+  
+  /*Estilos del footer de Página Inquietudes*/
+  
+  /*Estilos del main del footer*/
+  
+  footer, .footerServicios {
+    margin-top: 20px;
+    background-image: linear-gradient(to right, #008080 5%, #8FBC8F 40%);
+    @include tamanio(100%,30px);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  
+
+  

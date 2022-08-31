@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/maribedaris/proyectoWebSpasanara/issues"
   },
-  "homepage": "https://github.com/maribedaris/proyectoWebSpasanara#readme"
+  "homepage": "https://github.com/maribedaris/proyectoWebSpasanara#readme",
+  "dependencies": {
+    "sass-convert": "^0.5.2"
+  }
 }
