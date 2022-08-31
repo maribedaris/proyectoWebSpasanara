@@ -462,8 +462,6 @@
       margin-left: 1.3%;
       background-color: #dfe1e5;
       margin-bottom: 10px;
-
-    
     }
   }
   
@@ -481,20 +479,30 @@
   
   .mainNosotros {
     .instalNosotros {
+      padding: 10px;
       .instalNosotrosImg {
+        @include tamanio(63vw,40vh);
         background-image: url("../assets/images/instalaciones.jpg");
         margin-left: 10px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        margin: 10px;
+        //margin: 10px;
         border-radius: 5px;
         border: 1px solid #008080;
+        margin: auto 0;
       }
     }
   
     .naceNosotros .naceNosotrosImg {
-      @extend .instalNosotrosImg;
+      @include tamanio(35vw,40vh);
+      margin-left: 10px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid #008080;
       background-image: url("../assets/images/nosotros_vela.jpg");
     }
   
@@ -805,7 +813,7 @@
   
   /*Estilos del main del footer*/
   
-  footer, .footerServicios {
+  footer, .footerServicios,.footerNosotros{
     margin-top: 20px;
     background-image: linear-gradient(to right, #008080 5%, #8FBC8F 40%);
     @include tamanio(100%,30px);

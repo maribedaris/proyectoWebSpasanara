@@ -418,8 +418,24 @@ main .ubicacionSection iframe {
   margin-bottom: 10px;
 }
 
-.mainNosotros .instalNosotros .instalNosotrosImg, .mainNosotros .instalNosotros .naceNosotros .naceNosotrosImg, .mainNosotros .naceNosotros .instalNosotros .naceNosotrosImg {
+.mainNosotros .instalNosotros {
+  padding: 10px;
+}
+.mainNosotros .instalNosotros .instalNosotrosImg {
+  width: 63vw;
+  height: 40vh;
   background-image: url("../assets/images/instalaciones.jpg");
+  margin-left: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  border: 1px solid #008080;
+  margin: auto 0;
+}
+.mainNosotros .naceNosotros .naceNosotrosImg {
+  width: 35vw;
+  height: 40vh;
   margin-left: 10px;
   background-size: cover;
   background-position: center;
@@ -427,8 +443,6 @@ main .ubicacionSection iframe {
   margin: 10px;
   border-radius: 5px;
   border: 1px solid #008080;
-}
-.mainNosotros .naceNosotros .naceNosotrosImg {
   background-image: url("../assets/images/nosotros_vela.jpg");
 }
 .mainNosotros .ubicacionNosotrosmap iframe {
@@ -702,7 +716,7 @@ main .ubicacionSection iframe {
 
 /*Estilos del footer de Página Inquietudes*/
 /*Estilos del main del footer*/
-footer, .footerServicios {
+footer, .footerServicios, .footerNosotros {
   margin-top: 20px;
   background-image: linear-gradient(to right, #008080 5%, #8FBC8F 40%);
   width: 100%;
@@ -711,7 +725,7 @@ footer, .footerServicios {
   flex-direction: row;
   justify-content: flex-end;
 }
-footer p, .footerServicios p {
+footer p, .footerServicios p, .footerNosotros p {
   font-size: 1.4rem;
 }
 
@@ -869,8 +883,7 @@ footer p, .footerServicios p {
     display: grid;
     grid-template-areas: "titulo" "instalaciones" "nacimiento" "ubicacion" "equipo";
     grid-template-columns: 100%;
-    grid-template-rows: 1% 17% 17% 17% auto;
-    grid-row-gap: 10px;
+    grid-template-rows: 1% 21% 21% 21% auto;
   }
   .mainNosotros h1 {
     grid-area: titulo;
@@ -879,15 +892,17 @@ footer p, .footerServicios p {
   .mainNosotros .instalNosotros {
     grid-area: instalaciones;
     display: grid;
+    height: 370px;
+    margin-top: 10px;
     grid-template-areas: "texto" "img";
     grid-template-columns: 100%;
-    grid-template-rows: 60% 40%;
+    grid-template-rows: 80% 20%;
     text-align: center;
   }
   .mainNosotros .instalNosotros .instalNosotrosTexto {
     grid-area: texto;
   }
-  .mainNosotros .instalNosotros .instalNosotrosImg, .mainNosotros .instalNosotros .naceNosotros .naceNosotrosImg, .mainNosotros .naceNosotros .instalNosotros .naceNosotrosImg {
+  .mainNosotros .instalNosotros .instalNosotrosImg {
     grid-area: img;
     width: 150px;
     height: 100px;
@@ -900,6 +915,7 @@ footer p, .footerServicios p {
     grid-template-columns: 100%;
     grid-template-rows: 60% 40%;
     text-align: center;
+    height: 380px;
   }
   .mainNosotros .naceNosotros .naceNosotrosTexto {
     grid-area: texto2;
@@ -908,10 +924,11 @@ footer p, .footerServicios p {
     grid-area: img2;
     width: 150px;
     height: 100px;
-    margin: 0 auto;
+    margin: 50px auto;
   }
   .mainNosotros .ubicacionNosotros {
     grid-area: ubicacion;
+    height: 380px;
   }
   .mainNosotros .equipoNosotros {
     grid-area: equipo;
@@ -921,7 +938,7 @@ footer p, .footerServicios p {
     display: grid;
     grid-template-areas: "texto3" "img3";
     grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 60% 40%;
     text-align: center;
   }
   .mainNosotros .ubicacionNosotros .ubicacionNosotrosTexto {
@@ -929,19 +946,19 @@ footer p, .footerServicios p {
   }
   .mainNosotros .ubicacionNosotros .ubicacionNosotrosmap iframe {
     grid-area: img3;
-    width: 200px;
-    height: 170px;
+    width: 180px;
+    height: 120px;
     margin: 0 auto;
   }
   .mainNosotros .equipoNosotros {
-    height: 130vh;
+    height: 93vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
   }
   .mainNosotros .equipoNosotros h2 {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .mainNosotros .equipoNosotros .contenedorEquipo {
     display: flex;
@@ -950,12 +967,12 @@ footer p, .footerServicios p {
   }
   .mainNosotros .equipoNosotros .personaEquipo {
     width: 200px;
-    height: 200px;
+    height: 180px;
     margin: 10px;
   }
   .mainNosotros .equipoNosotros .personaEquipo Img {
     width: 120px;
-    height: 140px;
+    height: 120px;
   }
   /*estilos del main de la página de registro*/
   .mainRegistro .fielsetRegistro {
