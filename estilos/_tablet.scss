@@ -1,58 +1,56 @@
-@media (min-width:631px) and (max-width:930px){
+@media (min-width: 631px) and (max-width: 930px) {
     * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        }
-        html{
-        font-size: 62.5%;
-        font-family: "DM Sans", sans-serif;
-        }
-    main{
-        display: grid;
-        grid-template-areas:
-        "destacados"
-        "galeriaImg"
-        "quienesSomos"
-        "formulario"
-        "mapa";
-        grid-template-columns: 100%;
-        grid-template-rows:400px 315px 1fr 1fr 1fr;
-        }
-    
-        main .destacadosSection{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+  
+    html {
+      font-size: 62.5%;
+      font-family: "DM Sans", sans-serif;
+    }
+  
+    main {
+      display: grid;
+      grid-template-areas: "destacados" "galeriaImg" "quienesSomos" "formulario" "mapa";
+      grid-template-columns: 100%;
+      grid-template-rows: 400px 315px 1fr 1fr 1fr;
+  
+      .destacadosSection {
         grid-area: destacados;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        }
-    
-        main .galeriaImagenes{
-        grid-area:galeriaImg;
+      }
+  
+      .galeriaImagenes {
+        grid-area: galeriaImg;
         display: flex;
         justify-content: space-evenly;
         height: 300px;
-        overflow-x:scroll;
+        overflow-x: scroll;
         overscroll-behavior-x: contain;
-        scroll-snap-type:x proximity; 
+        scroll-snap-type: x proximity;
+  
+        img {
+          min-width: 190px;
+          max-width: 250px;
+          height: 300px;
+          margin: 5px;
         }
-    
-        main .galeriaImagenes img{
-        min-width: 190px;
-        max-width: 250px;
-        height: 300px;
-        margin: 5px;
-        }
-        main .quienesSomos{
+      }
+  
+      .quienesSomos {
         margin-right: 1vw;
         margin-left: 2vw;
-        }
-    
-        main .quienesSomosImg img{
+      }
+  
+      .quienesSomosImg img {
         width: 300px;
-        }
-    
-        main .formulario .formularioTexto{
+      }
+  
+      .formulario .formularioTexto {
         margin-left: 1vw;
-        }
+      }
     }
+  }

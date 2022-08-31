@@ -1,367 +1,353 @@
 @media (max-width: 630px) {
     /*Estilos generales*/
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      html{
-        font-size: 62.5%;
-        font-family: "DM Sans", sans-serif;
-      }
-    
-    /*Estilos del header mobile*/
-      header nav{
-        display: grid;
-        grid-template-areas:
-        "informacionArriba"
-        "logoSeccion"
-        "menuSeccion";
-        grid-template-columns:100%;
-        grid-template-rows: 1fr 1fr 1fr;
-        background-image:radial-gradient(#008080 5%, #8FBC8F 40%);
-      }
-    
-      ol,ul{
-        padding-left: 0rem;
-      }
-    
-      header nav .logoSeccion{
-        grid-area: logoSeccion;
-      }
-    
-      header nav .buscadorSeccion{
-        margin:auto auto;
-      }
-    
-      header nav .spasanaraLogo{
-        display: none;
-      }
-      header nav .informacionArriba{
-        grid-area:informacionArriba;
-        margin: auto auto;
-      }
-    
-      header nav .redesSeccion{
-        display: none;
-      }
-    
-      header nav .textosInit{
-        grid-area: listaRegistro;
-      }
-    
-      header nav .menuSeccion{
-        grid-area: menuSeccion;
-        display: flex;
-        justify-content: center;
-        margin: auto  auto;
-      }
-    
-      header .listaMenu{
-       margin: auto auto;
-      }
-    
-      header .listaMenu a{
-        font-size: 1.3rem;
-      }
-    
-      
-    header ul ul li{
-      display: block;
-      background-color:#8FBC8F;
-      width: 100%;
+  
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    
+  
+    html {
+      font-size: 62.5%;
+      font-family: "DM Sans", sans-serif;
+    }
+  
+    /*Estilos del header mobile*/
+  
+    header nav {
+      display: grid;
+      grid-template-areas: "informacionArriba" "logoSeccion" "menuSeccion";
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr 1fr;
+      background-image: radial-gradient(#008080 5%, #8FBC8F 40%);
+    }
+  
+    ol, ul {
+      padding-left: 0rem;
+    }
+  
+    header {
+      nav {
+        .logoSeccion {
+          grid-area: logoSeccion;
+        }
+  
+        .buscadorSeccion {
+          margin: auto auto;
+        }
+  
+        .spasanaraLogo {
+          display: none;
+        }
+  
+        .informacionArriba {
+          grid-area: informacionArriba;
+          margin: auto auto;
+        }
+  
+        .redesSeccion {
+          display: none;
+        }
+  
+        .textosInit {
+          grid-area: listaRegistro;
+        }
+  
+        .menuSeccion {
+          grid-area: menuSeccion;
+          display: flex;
+          justify-content: center;
+          margin: auto  auto;
+        }
+      }
+  
+      .listaMenu {
+        margin: auto auto;
+  
+        a {
+          font-size: 1.3rem;
+        }
+      }
+  
+      ul ul li {
+        display: block;
+        background-color: #8FBC8F;
+        width: 100%;
+      }
+    }
+  
     /*Estilos del main página Index*/
-      main{
-        display: grid;
-        grid-template-areas:
-        "destacados"
-        "galeriaImg"
-        "quienesSomos"
-        "formulario"
-        "mapa";
-        grid-template-columns: 100%;
-        grid-template-rows:750px 315px 1fr 1fr 1fr;
-      }
-    
-      main .destacadosSection{
+  
+    main {
+      display: grid;
+      grid-template-areas: "destacados" "galeriaImg" "quienesSomos" "formulario" "mapa";
+      grid-template-columns: 100%;
+      grid-template-rows: 750px 315px 1fr 1fr 1fr;
+  
+      .destacadosSection {
         grid-area: destacados;
+  
+        .servicioDestacado3 {
+          display: none;
+        }
       }
-    
-      main .destacadosSection .servicioDestacado3{
-        display: none;
-      }
-    
-      main .galeriaImagenes{
-        grid-area:galeriaImg;
+  
+      .galeriaImagenes {
+        grid-area: galeriaImg;
         display: flex;
-          height: 300px;
-          overflow-x:scroll;
-          overscroll-behavior-x: contain;
-          scroll-snap-type:x proximity; 
-      }
-    
-      main .galeriaImagenes img{
-        width: 200px;
         height: 300px;
-        margin: 5px;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+  
+        img {
+          width: 200px;
+          height: 300px;
+          margin: 5px;
+        }
       }
-    
-      main .quienesSomos {
+  
+      .quienesSomos {
         grid-area: quienesSomos;
-        display:grid;
-        grid-template-areas:
-        "texto"
-        "img";
+        display: grid;
+        grid-template-areas: "texto" "img";
         grid-template-columns: 100%;
-        grid-template-rows:1fr 1fr;
+        grid-template-rows: 1fr 1fr;
       }
-    
-      main .quienesSomosTexto{
+  
+      .quienesSomosTexto {
         grid-area: texto;
         margin: 0 auto;
         border: solid 1px #899797;
         text-align: center;
         padding: 5px;
       }
-    
-      main .quienesSomosImg{
+  
+      .quienesSomosImg {
         grid-area: img;
         display: flex;
         justify-content: center;
+  
+        img {
+          width: 180px;
+          height: 180px;
+          margin: 10px;
+        }
       }
-    
-      main .quienesSomosImg img{
-        width: 180px;
-        height: 180px;
-        margin: 10px;
-      }
-    
-      main .formulario{
+  
+      .formulario {
         grid-area: formulario;
         display: grid;
-        grid-template-areas:
-        "form"
-        "boton"
-        "imagen";
+        grid-template-areas: "form" "boton" "imagen";
         grid-template-columns: 100%;
-        grid-template-rows:45% 10% 45%;
+        grid-template-rows: 45% 10% 45%;
+  
+        .formularioTexto {
+          grid-area: form;
+          margin: 5px;
+          text-align: center;
+        }
+  
+        .formularioBoton {
+          grid-area: boton;
+          margin: auto auto;
+          width: 55vw;
+        }
+  
+        .formularioImg {
+          grid-area: imagen;
+        }
       }
-    
-      main .formulario .formularioTexto{
-        grid-area: form;
-        margin: 5px;
-        text-align: center;
-      }
-    
-      main .formulario .formularioBoton{
-        grid-area:boton;
-        margin: auto auto;
-        width: 55vw;
-      }
-    
-      main .formulario .formularioImg{
-        grid-area:imagen;
-      }
-    
-      main .formularioImg img{
+  
+      .formularioImg img {
         width: 180px;
         height: 160px;
         margin: 10px;
       }
-    
-      main .ubicacionSection{
+  
+      .ubicacionSection {
         margin-top: 10px;
         grid-area: mapa;
-        display:grid;
-        grid-template-areas:
-        "texto"
-        "imgMapa";
-        grid-template-columns: 100%;
-        grid-template-rows:20% 80%;
-      }
-    
-      main .iframeSection{
-        grid-area: imgMapa;
-        margin:auto auto;
-      }
-    
-      main .iframeSection iframe{
-        height: 300px;
-        width: 200px;
-      }
-    
-    /*Estilos del main de Página Nosotros*/
-      .mainNosotros{
         display: grid;
-        grid-template-areas:
-        "titulo"
-        "instalaciones"
-        "nacimiento"
-        "ubicacion"
-        "equipo";
+        grid-template-areas: "texto" "imgMapa";
         grid-template-columns: 100%;
-        grid-template-rows:1% 17% 17% 17% auto;
-        grid-row-gap:10px;
+        grid-template-rows: 20% 80%;
       }
-    
-      .mainNosotros h1{
+  
+      .iframeSection {
+        grid-area: imgMapa;
+        margin: auto auto;
+  
+        iframe {
+          height: 300px;
+          width: 200px;
+        }
+      }
+    }
+  
+    /*Estilos del main de Página Nosotros*/
+  
+    .mainNosotros {
+      display: grid;
+      grid-template-areas: "titulo" "instalaciones" "nacimiento" "ubicacion" "equipo";
+      grid-template-columns: 100%;
+      grid-template-rows: 1% 17% 17% 17% auto;
+      grid-row-gap: 10px;
+  
+      h1 {
         grid-area: titulo;
         margin: 0 auto;
       }
-      .mainNosotros .instalNosotros{
+  
+      .instalNosotros {
         grid-area: instalaciones;
         display: grid;
-        grid-template-areas:
-        "texto"
-        "img";
+        grid-template-areas: "texto" "img";
         grid-template-columns: 100%;
-        grid-template-rows:60% 40%;
+        grid-template-rows: 60% 40%;
         text-align: center;
+  
+        .instalNosotrosTexto {
+          grid-area: texto;
+        }
+  
+        .instalNosotrosImg {
+          grid-area: img;
+          width: 150px;
+          height: 100px;
+          margin: 0 auto;
+        }
       }
-    
-      .mainNosotros .instalNosotros .instalNosotrosTexto{
-        grid-area: texto;
-      }
-    
-      .mainNosotros .instalNosotros .instalNosotrosImg{
-        grid-area: img;
-        width: 150px;
-        height: 100px;
-        margin: 0 auto;
-      }
-    
-      .mainNosotros .naceNosotros{
+  
+      .naceNosotros {
         grid-area: nacimiento;
         display: grid;
-        grid-template-areas:
-        "texto2"
-        "img2";
+        grid-template-areas: "texto2" "img2";
         grid-template-columns: 100%;
-        grid-template-rows:60% 40%;
+        grid-template-rows: 60% 40%;
         text-align: center;
+  
+        .naceNosotrosTexto {
+          grid-area: texto2;
+        }
+  
+        .naceNosotrosImg {
+          grid-area: img2;
+          width: 150px;
+          height: 100px;
+          margin: 0 auto;
+        }
       }
-    
-      .mainNosotros .naceNosotros .naceNosotrosTexto{
-        grid-area: texto2;
-      }
-      .mainNosotros .naceNosotros .naceNosotrosImg{
-        grid-area: img2;
-        width: 150px;
-        height: 100px;
-        margin: 0 auto;
-      }
-    
-      .mainNosotros .ubicacionNosotros{
+  
+      .ubicacionNosotros {
         grid-area: ubicacion;
       }
-    
-      .mainNosotros .equipoNosotros{
-        grid-area:equipo;
+  
+      .equipoNosotros {
+        grid-area: equipo;
       }
-    
-      .mainNosotros .ubicacionNosotros{
+  
+      .ubicacionNosotros {
         grid-area: ubicacion;
         display: grid;
-        grid-template-areas:
-        "texto3"
-        "img3";
+        grid-template-areas: "texto3" "img3";
         grid-template-columns: 100%;
-        grid-template-rows:30% 70%;
+        grid-template-rows: 30% 70%;
         text-align: center;
+  
+        .ubicacionNosotrosTexto {
+          grid-area: texto3;
+        }
+  
+        .ubicacionNosotrosmap iframe {
+          grid-area: img3;
+          width: 200px;
+          height: 170px;
+          margin: 0 auto;
+        }
       }
-    
-      .mainNosotros .ubicacionNosotros .ubicacionNosotrosTexto{
-        grid-area: texto3;
-      }
-      .mainNosotros .ubicacionNosotros .ubicacionNosotrosmap iframe{ 
-        grid-area: img3;
-        width: 200px;
-        height: 170px;
-        margin: 0 auto;
-      }
-    
-      .mainNosotros .equipoNosotros{
+  
+      .equipoNosotros {
         height: 130vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        }
-    
-        .mainNosotros .equipoNosotros h2{
+  
+        h2 {
           margin-top: 20px;
         }
-    
-      .mainNosotros .equipoNosotros .contenedorEquipo{
-      display: flex;
-      flex-direction: column;
-      margin: auto auto;
+  
+        .contenedorEquipo {
+          display: flex;
+          flex-direction: column;
+          margin: auto auto;
+        }
+  
+        .personaEquipo {
+          width: 200px;
+          height: 200px;
+          margin: 10px;
+  
+          Img {
+            width: 120px;
+            height: 140px;
+          }
+        }
       }
-    
-      .mainNosotros .equipoNosotros .personaEquipo{
-        width: 200px;
-        height: 200px;
-        margin: 10px;
-      }
-    
-      .mainNosotros .equipoNosotros .personaEquipo Img{
-        width: 120px;
-        height: 140px;
-      }
+    }
+  
     /*estilos del main de la página de registro*/
-    .mainRegistro .fielsetRegistro{
+  
+    .mainRegistro .fielsetRegistro {
       width: 90vw;
+  
+      legend {
+        color: #008080;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        width: 40%;
+      }
+  
+      .divisionRegistro {
+        margin-top: 10px;
+        margin-left: 5px;
+  
+        input {
+          width: 70%;
+        }
+      }
+  
+      .divBoton {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
     }
-    .mainRegistro .fielsetRegistro legend{
-      color: #008080;
-      font-size: 1.8rem;
-      font-weight: bold;
-      text-align: center;
-      width: 40%;
-    }
-    
-    .mainRegistro .fielsetRegistro .divisionRegistro{
-      margin-top: 10px;
-      margin-left: 5px;
-    }
-    
-    .mainRegistro .fielsetRegistro .divisionRegistro input{
-      width: 70%;
-    }
-    
-    .mainRegistro .fielsetRegistro .divBoton{
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-    }
-    
+  
     /*estilos del main de la página de inquietudes*/
-    .mainInquietudes .fielsetComentarios legend{
-      color: #008080;
-      font-size: 1.4rem;
-      font-weight: bold;
-      text-align: center;
-      width: 90%;
-    }
-    
-    .mainInquietudes .fielsetComentarios{
+  
+    .mainInquietudes .fielsetComentarios {
+      legend {
+        color: #008080;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        width: 90%;
+      }
+  
       width: 80%;
       height: 60vh;
       margin: auto auto;
       border: 5px double #008080;
-      }
-    
-      .mainInquietudes .fielsetComentarios .divBoton input{
-        margin:0 auto;
-      }
-    
-      .mainInquietudes .fielsetComentarios .divBoton input{
-        display:flex;
+  
+      .divBoton input {
+        margin: 0 auto;
+        display: flex;
         justify-content: center;
       }
-    
-    /*estilos del main de la página de servicios*/
     }
-    
+  
+    /*estilos del main de la página de servicios*/
+  }
