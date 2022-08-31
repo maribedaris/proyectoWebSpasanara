@@ -191,8 +191,8 @@
       display: grid;
       grid-template-areas: "titulo" "instalaciones" "nacimiento" "ubicacion" "equipo";
       grid-template-columns: 100%;
-      grid-template-rows: 1% 17% 17% 17% auto;
-      grid-row-gap: 10px;
+      grid-template-rows: 1% 21% 21% 21% auto;
+
   
       h1 {
         grid-area: titulo;
@@ -202,9 +202,11 @@
       .instalNosotros {
         grid-area: instalaciones;
         display: grid;
+        height: 370px;
+        margin-top: 10px;
         grid-template-areas: "texto" "img";
         grid-template-columns: 100%;
-        grid-template-rows: 60% 40%;
+        grid-template-rows: 80% 20%;
         text-align: center;
   
         .instalNosotrosTexto {
@@ -226,6 +228,7 @@
         grid-template-columns: 100%;
         grid-template-rows: 60% 40%;
         text-align: center;
+        height: 380px;
   
         .naceNosotrosTexto {
           grid-area: texto2;
@@ -235,12 +238,13 @@
           grid-area: img2;
           width: 150px;
           height: 100px;
-          margin: 0 auto;
+          margin: 50px auto;
         }
       }
   
       .ubicacionNosotros {
         grid-area: ubicacion;
+        height: 380px;
       }
   
       .equipoNosotros {
@@ -252,7 +256,7 @@
         display: grid;
         grid-template-areas: "texto3" "img3";
         grid-template-columns: 100%;
-        grid-template-rows: 30% 70%;
+        grid-template-rows: 60% 40%;
         text-align: center;
   
         .ubicacionNosotrosTexto {
@@ -261,21 +265,21 @@
   
         .ubicacionNosotrosmap iframe {
           grid-area: img3;
-          width: 200px;
-          height: 170px;
+          width: 180px;
+          height: 120px;
           margin: 0 auto;
         }
       }
   
       .equipoNosotros {
-        height: 130vh;
+        height: 93vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
   
         h2 {
-          margin-top: 20px;
+          margin-top: 10px;
         }
   
         .contenedorEquipo {
@@ -286,12 +290,12 @@
   
         .personaEquipo {
           width: 200px;
-          height: 200px;
+          height: 180px;
           margin: 10px;
   
           Img {
             width: 120px;
-            height: 140px;
+            height: 120px;
           }
         }
       }
