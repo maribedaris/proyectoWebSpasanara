@@ -119,7 +119,7 @@
         grid-area: texto;
         margin: 0 auto;
         border: solid 1px #899797;
-        text-align: center;
+        text-align:justify;
         padding: 5px;
       }
   
@@ -191,33 +191,34 @@
       display: grid;
       grid-template-areas: "titulo" "instalaciones" "nacimiento" "ubicacion" "equipo";
       grid-template-columns: 100%;
-      grid-template-rows: 1% 21% 21% 21% auto;
+      grid-template-rows: 1% 21% 21% 20% auto;
 
   
       h1 {
         grid-area: titulo;
-        margin: 0 auto;
+        margin: auto auto;
       }
   
       .instalNosotros {
         grid-area: instalaciones;
         display: grid;
-        height: 370px;
+        height: 340px;
         margin-top: 10px;
         grid-template-areas: "texto" "img";
         grid-template-columns: 100%;
-        grid-template-rows: 80% 20%;
+        grid-template-rows: 70% 30%;
         text-align: center;
+        margin-right:5px;
+        margin-left:5px;
   
         .instalNosotrosTexto {
           grid-area: texto;
+          text-align: justify;
+          margin: 10px;
         }
   
         .instalNosotrosImg {
-          grid-area: img;
-          width: 150px;
-          height: 100px;
-          margin: 0 auto;
+         display:none;
         }
       }
   
@@ -226,25 +227,24 @@
         display: grid;
         grid-template-areas: "texto2" "img2";
         grid-template-columns: 100%;
-        grid-template-rows: 60% 40%;
+        grid-template-rows: 55% 45%;
         text-align: center;
-        height: 380px;
+        height: 350px;
   
         .naceNosotrosTexto {
           grid-area: texto2;
+          text-align: justify;
+          margin: 10px;
         }
   
         .naceNosotrosImg {
-          grid-area: img2;
-          width: 150px;
-          height: 100px;
-          margin: 50px auto;
+          display:none;
         }
       }
   
       .ubicacionNosotros {
         grid-area: ubicacion;
-        height: 380px;
+        height: 330px;
       }
   
       .equipoNosotros {
@@ -261,18 +261,20 @@
   
         .ubicacionNosotrosTexto {
           grid-area: texto3;
+          text-align: justify;
+          margin: 10px;
         }
   
         .ubicacionNosotrosmap iframe {
           grid-area: img3;
           width: 180px;
-          height: 120px;
+          height: 110px;
           margin: 0 auto;
         }
       }
   
       .equipoNosotros {
-        height: 93vh;
+        height: 115vh;
         display: flex;
         flex-direction: column;
         justify-content: center;

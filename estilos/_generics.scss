@@ -193,12 +193,13 @@
   
       .servicioDestacado, .servicioDestacado3 {
         border: 1px solid #008080;
-        height: 350px;
-        margin: 10px;
+        height: 320px;
+        margin: 15px;
         display: grid;
         grid-template-areas: "titulo" "texto" "boton";
         grid-template-columns: 1fr;
         grid-template-rows: 10% 75% 15%;
+        min-width: 230px;
       }
   
       .destacadoTitle {
@@ -212,16 +213,22 @@
   
       .destacadoParrafo {
         font-size: 1.4rem;
+        margin: 10px;
+        text-align: justify;
       }
   
-      .botonReserva {
+      .botonReserva{
         @include tamanio(100px,30px);
         border-radius: 50px;
         border: solid #008080;
         background-image: linear-gradient(to left, #008080 0%, #8FBC8F 90%);
         color: white;
         font-weight: bold;
-        margin: 0 auto;
+        margin: auto auto;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.6rem;
+
   
         &:hover {
           @include tamanio(120px,35px);
