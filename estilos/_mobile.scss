@@ -1,5 +1,6 @@
-@media (max-width: 630px) {
-    /*Estilos generales*/
+@media (max-width: 630px) 
+{
+  /*Estilos generales*/
   
     * {
       box-sizing: border-box;
@@ -12,7 +13,7 @@
       font-family: "DM Sans", sans-serif;
     }
   
-    /*Estilos del header mobile*/
+  /*Estilos del header mobile*/
   
     header nav {
       display: grid;
@@ -63,10 +64,9 @@
   
       .listaMenu {
         margin: auto auto;
-  
         a {
-          font-size: 1.3rem;
-        }
+            font-size: 1.3rem;
+          }
       }
   
       ul ul li {
@@ -76,8 +76,8 @@
       }
     }
   
-    /*Estilos del main página Index*/
-  
+  /*Estilos del main página Index*/
+
     main {
       display: grid;
       grid-template-areas: "destacados" "galeriaImg" "quienesSomos" "formulario" "mapa";
@@ -185,7 +185,7 @@
       }
     }
   
-    /*Estilos del main de Página Nosotros*/
+  /*Estilos del main de Página Nosotros*/
   
     .mainNosotros {
       display: grid;
@@ -218,7 +218,7 @@
         }
   
         .instalNosotrosImg {
-         display:none;
+          display:none;
         }
       }
   
@@ -303,7 +303,7 @@
       }
     }
   
-    /*estilos del main de la página de registro*/
+  /*estilos del main de la página de registro*/
   
     .mainRegistro .fielsetRegistro {
       width: 90vw;
@@ -332,7 +332,7 @@
       }
     }
   
-    /*estilos del main de la página de inquietudes*/
+  /*estilos del main de la página de inquietudes*/
   
     .mainInquietudes .fielsetComentarios {
       legend {
@@ -355,7 +355,7 @@
       }
     }
   
-    /*estilos del footer de mobile*/
+  /*estilos del footer de mobile*/
 
   footer,.footerNosotros,.footerRegistro,.footerInquietudes,.footerServicios{
     height: 15%;
@@ -414,6 +414,6 @@
     }
     .creador{
       display:none;
+    }
   }
-}
 }

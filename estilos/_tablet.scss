@@ -1,56 +1,165 @@
-@media (min-width: 631px) and (max-width: 930px) {
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-  
-    html {
-      font-size: 62.5%;
-      font-family: "DM Sans", sans-serif;
-    }
-  
-    main {
-      display: grid;
-      grid-template-areas: "destacados" "galeriaImg" "quienesSomos" "formulario" "mapa";
-      grid-template-columns: 100%;
-      grid-template-rows: 400px 315px 1fr 1fr 1fr;
-  
-      .destacadosSection {
-        grid-area: destacados;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+@media (min-width: 631px) and (max-width: 930px) 
+{
+/*Estilos del index para tablet*/
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
       }
-  
-      .galeriaImagenes {
-        grid-area: galeriaImg;
-        display: flex;
-        justify-content: space-evenly;
-        height: 300px;
-        overflow-x: scroll;
-        overscroll-behavior-x: contain;
-        scroll-snap-type: x proximity;
-  
-        img {
-          min-width: 190px;
-          max-width: 250px;
+    
+      html {
+        font-size: 62.5%;
+        font-family: "DM Sans", sans-serif;
+      }
+    
+      main {
+        display: grid;
+        grid-template-areas: "destacados" "galeriaImg" "quienesSomos" "formulario" "mapa";
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 315px 1fr 1fr 1fr;
+    
+        .destacadosSection {
+          grid-area: destacados;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+    
+        .galeriaImagenes {
+          grid-area: galeriaImg;
+          display: flex;
+          justify-content: space-evenly;
           height: 300px;
-          margin: 5px;
+          overflow-x: scroll;
+          overscroll-behavior-x: contain;
+          scroll-snap-type: x proximity;
+    
+          img {
+            min-width: 190px;
+            max-width: 250px;
+            height: 300px;
+            margin: 5px;
+          }
+        }
+    
+        .quienesSomos {
+          margin-right: 1vw;
+          margin-left: 2vw;
+        }
+    
+        .quienesSomosImg img {
+          width: 300px;
+        }
+    
+        .formulario .formularioTexto {
+          margin-left: 1vw;
         }
       }
-  
-      .quienesSomos {
-        margin-right: 1vw;
-        margin-left: 2vw;
+
+/*Estilos del main de inquietudes*/
+  .mainInquietudes{
+      h1{
+        font-size: 2rem;
       }
-  
-      .quienesSomosImg img {
-        width: 300px;
+  }
+
+/*Estilos tarjetas de servicios*/
+  .mainServicios {
+      #textActivCard{
+        line-height: 1.547;
       }
-  
-      .formulario .formularioTexto {
-        margin-left: 1vw;
+
+      #textActivCard2{
+        line-height:1.17; 
       }
+
+      #titleActivCard2{
+        line-height:0.9; 
+        word-spacing:0.4rem;
+        text-align:center;
+      }
+      
+      #titleActivCard3{
+        line-height: 0.9;
+      }
+      
+      #textActivCard3{
+        line-height:1.056; 
+      }
+
+      #textAlinCard{
+        line-height: 1.69;
+        word-spacing:0.9rem;
+      }
+
+      #textAlinCard2{
+        line-height: 1.3;
+      }
+
+      #textAlinCard3{
+        line-height: 1.08;
+      }
+
+      #titleCefCard{
+        line-height: 0.87;
+      }
+
+      #textCefCard{
+        line-height: 1.5;
+      }
+
+      #textSemCard3{
+        line-height: 1.25;
+      }
+
+      #textSemCard{
+        line-height: 1.48;
+      }
+
+/*Estilos de tarjetas de servicios destacados en el main de servicios*/
+
+    #textServicDestAct3{
+      line-height: 1.5;
+    }
+
+    #textServicDestCef{
+      line-height: 1.13;
+    }
+
+    #textServicDestCef2{
+      line-height: 1.13;
+    }
+
+    #textAfCard3{
+      line-height: 1;
+    }
+
+    #titleAfCard3{
+      line-height: 1;
+    }
+
+    #textServicDestAf3{
+      line-height: 1.9;
+    }
+
+    #titleServicDestAf3{
+      line-height: 1.3;
+    }
+
+    #textServicDestSem3{
+      line-height: 1.62;
+    }
+
+    #titleServicDestSem3{
+      line-height: 1.72;
+    }
+
+    #textServicDestSem4{
+      line-height: 1.7;
+    }
+
+    #titleServicDestSem4{
+      line-height: 1.6;
     }
   }
+}
