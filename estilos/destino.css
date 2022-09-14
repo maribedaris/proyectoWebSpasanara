@@ -686,15 +686,81 @@ main .ubicacionSection iframe {
 }
 
 /*Estilos de las tarjetas del main de la página de servicios*/
+.mainServicios .card-body p {
+  margin-bottom: 0rem;
+}
 .mainServicios #tarjetas, .mainServicios #tarjetas2, .mainServicios #tarjetas3, .mainServicios #tarjetas4, .mainServicios #tarjetas5 {
   height: 95%;
 }
 .mainServicios #tarjetas .col, .mainServicios #tarjetas3 .col, .mainServicios #tarjetas4 .col, .mainServicios #tarjetas5 .col, .mainServicios #tarjetas2 .col {
   height: 100%;
 }
-
-#destacados .col, #destacados2 .col, #destacados3 .col, #destacados4 .col, #destacados5 .col {
-  margin: 0 auto;
+.mainServicios #textActivCard2 {
+  line-height: 1.2;
+}
+.mainServicios #textAlinCard {
+  line-height: 1.3;
+  word-spacing: 0.7rem;
+}
+.mainServicios #textCefCard {
+  line-height: 1.4;
+  margin-bottom: 0rem;
+}
+.mainServicios #textSemCard {
+  line-height: 1.5;
+}
+.mainServicios #titleCefCard2 {
+  line-height: 1.15;
+  word-spacing: 0.7rem;
+}
+.mainServicios #textCefCard2 {
+  line-height: 1;
+  word-spacing: 0.3rem;
+}
+.mainServicios #textCefCard3 {
+  line-height: 1;
+}
+.mainServicios #titleAlinCard2 {
+  line-height: 0.9;
+}
+.mainServicios #textAlinCard2 {
+  line-height: 1.1;
+}
+.mainServicios #textAlinCard3 {
+  line-height: 1.1;
+}
+.mainServicios #titleActivCard3 {
+  line-height: 0.9;
+}
+.mainServicios #titleAlinCard3 {
+  line-height: 0.9;
+}
+.mainServicios #textActivCard3 {
+  line-height: 0.95;
+}
+.mainServicios .activText .display-4 {
+  color: #008080;
+  font-weight: 500;
+}
+.mainServicios .activText .lead {
+  font-size: 1.8rem;
+}
+.mainServicios .precioSeccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.mainServicios .precioSeccion .precio {
+  color: #008080;
+  font-weight: bold;
+  margin: 2px;
+  font-size: 2rem;
+}
+.mainServicios .precioSeccion .precioNum {
+  font-style: oblique;
+  margin: auto 0;
+  text-decoration: underline;
 }
 
 /*Estilos servicios destacados del main página servicios*/
@@ -719,24 +785,49 @@ main .ubicacionSection iframe {
   color: #008080;
 }
 
+#destacados .col, #destacados2 .col, #destacados3 .col, #destacados4 .col, #destacados5 .col {
+  margin: 0 auto;
+}
+
 /*Estilos del footer*/
-footer, .footerServicios, .footerNosotros {
+footer, .footerNosotros, .footerRegistro, .footerInquietudes {
   margin-top: 20px;
   background-image: linear-gradient(to right, #008080 5%, #8FBC8F 40%);
   width: 100%;
-  height: 30px;
+  height: 10%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-content: flex-end;
 }
-footer p, .footerServicios p, .footerNosotros p {
-  font-size: 1.4rem;
+footer .creador, .footerNosotros .creador, .footerRegistro .creador, .footerInquietudes .creador {
+  font-size: 1.8rem;
+  margin: auto 10px;
+  font-weight: bold;
+  color: #008080;
+  font-style: oblique;
+}
+footer .mobile, .footerNosotros .mobile, .footerRegistro .mobile, .footerInquietudes .mobile {
+  visibility: hidden;
 }
 
-/*Estilos del footer de Página Registro*/
-.footerRegistro, .footerInquietudes {
-  position: absolute;
-  bottom: 0px;
+.footerServicios {
+  margin-top: 20px;
+  background-image: linear-gradient(to right, #008080 5%, #8FBC8F 40%);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+.footerServicios .creador {
+  font-size: 1.8rem;
+  margin: auto 10px;
+  font-weight: bold;
+  color: #008080;
+  font-style: oblique;
+}
+.footerServicios .mobile {
+  visibility: hidden;
 }
 
 @media (max-width: 630px) {
@@ -1028,7 +1119,76 @@ footer p, .footerServicios p, .footerNosotros p {
     display: flex;
     justify-content: center;
   }
-  /*estilos del main de la página de servicios*/
+  /*estilos del footer de mobile*/
+  footer, .footerNosotros, .footerRegistro, .footerInquietudes, .footerServicios {
+    height: 15%;
+  }
+  footer .mobile, .footerNosotros .mobile, .footerRegistro .mobile, .footerInquietudes .mobile, .footerServicios .mobile {
+    visibility: visible;
+    width: 100%;
+    display: flex;
+  }
+  footer .mobile ul, .footerNosotros .mobile ul, .footerRegistro .mobile ul, .footerInquietudes .mobile ul, .footerServicios .mobile ul {
+    list-style-type: none;
+  }
+  footer .mobile .left, .footerNosotros .mobile .left, .footerRegistro .mobile .left, .footerInquietudes .mobile .left, .footerServicios .mobile .left {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    width: 80%;
+    margin: auto 0;
+  }
+  footer .mobile .left p, .footerNosotros .mobile .left p, .footerRegistro .mobile .left p, .footerInquietudes .mobile .left p, .footerServicios .mobile .left p {
+    font-size: 1.6rem;
+    margin-left: 5px;
+  }
+  footer .mobile .left ul, .footerNosotros .mobile .left ul, .footerRegistro .mobile .left ul, .footerInquietudes .mobile .left ul, .footerServicios .mobile .left ul {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .mobile .left .instagramLogoFooter, .footerNosotros .mobile .left .instagramLogoFooter, .footerRegistro .mobile .left .instagramLogoFooter, .footerInquietudes .mobile .left .instagramLogoFooter, .footerServicios .mobile .left .instagramLogoFooter {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image: url("../assets/instagram_logo.svg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  footer .mobile .left .facebookLogoFooter, .footerNosotros .mobile .left .facebookLogoFooter, .footerRegistro .mobile .left .facebookLogoFooter, .footerInquietudes .mobile .left .facebookLogoFooter, .footerServicios .mobile .left .facebookLogoFooter {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image: url("../assets/facebook_logo.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  footer .mobile .left .whatsappLogoFooter, .footerNosotros .mobile .left .whatsappLogoFooter, .footerRegistro .mobile .left .whatsappLogoFooter, .footerInquietudes .mobile .left .whatsappLogoFooter, .footerServicios .mobile .left .whatsappLogoFooter {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image: url("../assets/whatsApp_logo.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  footer .mobile .logoFooter, .footerNosotros .mobile .logoFooter, .footerRegistro .mobile .logoFooter, .footerInquietudes .mobile .logoFooter, .footerServicios .mobile .logoFooter {
+    margin: 10px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../assets/logo.svg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  footer .creador, .footerNosotros .creador, .footerRegistro .creador, .footerInquietudes .creador, .footerServicios .creador {
+    display: none;
+  }
 }
 @media (min-width: 631px) and (max-width: 930px) {
   * {
